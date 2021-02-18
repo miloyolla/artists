@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <h1>Artistas</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let item of items">
+    <img src="{{ item.images[0].url }}">
+    <ion-card-content>
+      <ion-card-title>{{ item.name }}</ion-card-title>
+      <ion-card-subtitle>Seguidores: {{ item.followers.total }}</ion-card-subtitle>
+      <ion-card-subtitle>Popularidade: {{ item.popularity }}</ion-card-subtitle>
+      <ion-button target="blank" href="{{ item.external_urls.spotify }}">Spotify</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
