@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { API_KEY } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class ArtistsService {
       headers: {
         'Content-type': 'application/json',
         'Accept': 'application/json',
-        // 'Authorization': 
+        'Authorization': 'Bearer'+API_KEY,
       }
   }
 
