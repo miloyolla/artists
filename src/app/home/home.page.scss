@@ -1,0 +1,38 @@
+ion-toolbar{
+  --background: #41634B;
+}
+
+h1{
+  color: #E5E5E5;
+}
+
+ion-content{
+  --background: #94E4AB;
+}
+
+ion-card{
+  --background: #41634B;
+  display: flex;
+  flex-direction: row;
+}
+
+ion-card-title{
+  color: #E5E5E5;
+}
+
+ion-card-subtitle{
+  color: #E5E5E5;
+}
+
+ion-button{
+  --background: #94E4AB;
+}
+
+img{
+  width: 50%;
+  height: 50%;
+}
+
+ion-card-content{
+  align-items:center;
+}
