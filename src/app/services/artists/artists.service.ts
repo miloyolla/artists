@@ -13,7 +13,7 @@ export class ArtistsService {
       headers: {
         'Content-type': 'application/json',
         'Accept': 'application/json',
-        'Authorization': 'Bearer'+API_KEY,
+        'Authorization': 'Bearer '+API_KEY,
       }
   }
 
